@@ -3418,4 +3418,42 @@ input, select, textarea {
 	}
   }
   
+
+  /* === Fiches Associés avec photo ronde === */
+#main .inner .associate {
+	display: flex;
+	align-items: flex-start;
+	gap: 1em;
+	margin-bottom: 2em;
+  }
+  
+  #main .inner .associate-photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	flex-shrink: 0;
+  }
+  
+  #main .inner .associate-text h3 {
+	margin: 0 0 0.5em;
+	font-size: 1.4em;
+  }
+  
+  #main .inner .associate-text p {
+	margin: 0;
+	line-height: 1.5;
+  }
+  
+  /* Responsive : empiler sur petits écrans */
+  @media (max-width: 768px) {
+	#main .inner .associate {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+	#main .inner .associate-photo {
+	  margin-bottom: 1em;
+	}
+  }
   
