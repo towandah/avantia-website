@@ -3456,4 +3456,26 @@ input, select, textarea {
 	  margin-bottom: 1em;
 	}
   }
+
+
+  /* === OVERRIDE : taille fixe max du logo === */
+#header .logo {
+	display: block !important;           /* on force le block */
+	max-width: 200px !important;         /* largeur max en pixels */
+	width: auto !important;              /* ne remplit plus 100% */
+	margin: 0 auto 2.5em;                /* centrage + marge basse */
+  }
+  
+  /* Contrainte sur le contenant de l’image */
+  #header .logo .symbol {
+	display: block !important;
+	max-width: 100%;
+  }
+  
+  /* On laisse l’image remplir le conteneur (200px) */
+  #header .logo .symbol img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
   
