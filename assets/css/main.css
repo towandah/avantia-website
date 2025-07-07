@@ -3520,3 +3520,18 @@ input, select, textarea {
 	  height: 120px;
 	}
   }
+
+
+  /* === Associate: image au-dessus du texte === */
+#associates .associates-list .associate {
+	display: flex;
+	flex-direction: column;    /* empile image puis texte */
+	align-items: center;       /* centre horizontalement */
+	text-align: center;        /* centre le texte */
+	max-width: 300px;          /* largeur max si tu veux limiter la colonne */
+  }
+  
+  #associates .associates-list .associate img {
+	margin: 0 0 1em;           /* espace sous l’image */
+	/* les autres règles (width, height, border-radius, object-fit) restent inchangées */
+  }
