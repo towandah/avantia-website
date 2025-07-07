@@ -3461,7 +3461,7 @@ input, select, textarea {
   /* === OVERRIDE : taille fixe max du logo === */
 #header .logo {
 	display: block !important;           /* on force le block */
-	max-width: 200px !important;         /* largeur max en pixels */
+	max-width: 70% !important;         /* largeur max en pixels */
 	width: auto !important;              /* ne remplit plus 100% */
 	margin: 0 auto 2.5em;                /* centrage + marge basse */
   }
