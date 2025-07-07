@@ -3479,3 +3479,44 @@ input, select, textarea {
 	display: block;
   }
   
+
+
+  /* === Portraits ronds et plus grands === */
+#associates .associates-list .associate img {
+	width: 150px;           /* largeur carrée */
+	height: 150px;          /* hauteur identique pour garder le carré */
+	border-radius: 50%;     /* cercle parfait */
+	object-fit: cover;      /* recadre l’image pour remplir sans déformer */
+	display: block;         /* supprime l’espace blanc sous l’image */
+	margin-right: 1em;      /* espace entre photo et texte */
+	flex-shrink: 0;         /* empêche l’image de rétrécir */
+  }
+  
+  /* Ajustement texte à côté */
+  #associates .associate-info {
+	flex: 1;                /* texte prend le reste de la ligne */
+  }
+  
+  /* Si vous voulez augmenter encore sur grand écran */
+  @media screen and (min-width: 1200px) {
+	#associates .associates-list .associate img {
+	  width: 180px;
+	  height: 180px;
+	}
+  }
+  
+  /* Responsive mobile (empilement et photo plus petite) */
+  @media screen and (max-width: 768px) {
+	#associates .associates-list {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	#associates .associates-list .associate {
+	  text-align: center;
+	}
+	#associates .associates-list .associate img {
+	  margin: 0 0 1em;
+	  width: 120px;
+	  height: 120px;
+	}
+  }
