@@ -3310,3 +3310,31 @@ input, select, textarea {
 			}
 
 		}
+
+/* ——— Responsive logo override ——— */
+#header .logo {
+	display: block !important;
+	max-width: 20vw;   /* ou 200px si vous préférez une taille fixe max */
+	width: 100%;
+	margin: 0 0 2.5em;
+  }
+  
+  #header .logo .symbol {
+	display: block;
+	max-width: 100%;
+  }
+  
+  #header .logo .symbol img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  
+  /* Optionnel : ajustement sur petits écrans */
+  @media screen and (max-width: 768px) {
+	#header .logo {
+	  max-width: 40vw;
+	  margin: 0 auto 2.5em;
+	}
+  }
+  
