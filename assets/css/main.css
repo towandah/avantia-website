@@ -2819,18 +2819,13 @@ input, select, textarea {
 	#header {
 		padding: 8em 0 0.1em 0 ;
 	}
-
-		#header .logo {
-			display: block;
-			border-bottom: 0;
-			color: inherit;
-			font-weight: 900;
-			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
-			text-decoration: none;
-			text-transform: uppercase;
-			display: inline-block;
-		}
+	
+	#header .logo {
+		display: block;       /* pour que la largeur à suivre s’applique */
+		max-width: 25%;       /* ajuste la part de la fenêtre que prend le logo */
+		width: 100%;          /* 100 % de son parent (ici le header.inner) */
+		margin: 0 0 2.5em;    /* conserve ta marge basse */
+	  }
 
 			#header .logo > * {
 				display: inline-block;
@@ -2841,10 +2836,11 @@ input, select, textarea {
 				margin-right: 0.65em;
 			}
 
-				#header .logo .symbol img {
-					width: auto;
-					height: auto;
-				}
+			#header .logo .symbol img {
+				width: 100%;          /* s’étire/rétrécit avec le conteneur */
+				height: auto;         /* proportions conservées */
+				display: block;       /* supprime l’espace blanc sous l’image */
+			  }
 
 		#header nav {
 			position: fixed;
