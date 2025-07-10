@@ -3590,3 +3590,14 @@ input, select, textarea {
   #footer > .inner section {
 	text-align: center;
   }
+
+
+
+
+  /* Agrandir le titre "Nos avocats" */
+#associates .associates-intro h3 {
+	font-size: 1.5em;    /* ajuste cette valeur selon ton goût */
+	margin-top: 0.5em;    /* un peu d’espace au-dessus si besoin */
+	margin-bottom: 1.5em; /* espace sous le titre */
+	line-height: 1.2;     /* pour garder une bonne lisibilité */
+  }
