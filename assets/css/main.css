@@ -3757,10 +3757,10 @@ input, select, textarea {
   }
   
   /* Titres et textes à l’intérieur des cartes */
-  #expertise .expertise-list h4 {
+  #expertise .expertise-list h3 {
 	margin-top: 0;
 	margin-bottom: 0.5em;
-	color: #a0322a;
+	color: #D2552E;
   }
   #expertise .expertise-list p {
 	margin: 0;
@@ -3793,7 +3793,7 @@ input, select, textarea {
 	gap: 2em;
   
 	/* ajoute un padding de chaque côté pour créer de l’espace extérieur */
-	padding: 0 2em;
+	padding: 0 7em;
 	box-sizing: border-box;  /* pour que le padding soit inclus dans la largeur totale */
   }
   
