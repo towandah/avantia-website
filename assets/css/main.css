@@ -3626,6 +3626,7 @@ input, select, textarea {
   #expertise .expertise-header h1 {
 	font-size: 2.5em;
 	margin-bottom: 0.5em;
+	margin-top: 2rem;
   }
   #expertise .expertise-header h3 {
 	font-size: 1.4em;
@@ -3668,8 +3669,9 @@ input, select, textarea {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1.5em;
 	list-style: none;
-	padding: 0;
+	padding: 0 1.5em;
 	margin: 0;
+	box-sizing: border-box;
   }
   #expertise .expertise-list li {
 	background: #fff;
@@ -3705,7 +3707,8 @@ input, select, textarea {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1.5em;
 	list-style: none;
-	padding: 0;
+	padding: 0 1.5em;
+	box-sizing: border-box;
 	margin: 0;
   }
   
@@ -3730,7 +3733,7 @@ input, select, textarea {
   /* ——— Amélioration visuelle des cartes d’expertise ——— */
 #expertise {
 	background: #f9f9f9;           /* fond gris clair pour détacher la section */
-	padding: 8em 0 5em;
+	padding: 5em 0;
   }
   
   #expertise .expertise-list {
@@ -3783,7 +3786,9 @@ input, select, textarea {
 	}
   }
 
-  
+  /* Pour les h3 de la section expertise « standard » */
+#expertise_alt .expertise-intro h3 {
+	margin-top: 2rem;
   
 
   /* ——— Gutter extérieur de même taille que le gap intérieur ——— */
