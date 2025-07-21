@@ -3793,8 +3793,21 @@ input, select, textarea {
 	gap: 2em;
   
 	/* ajoute un padding de chaque côté pour créer de l’espace extérieur */
-	padding: 0 7em;
+	padding: 0 5em;
 	box-sizing: border-box;  /* pour que le padding soit inclus dans la largeur totale */
   }
   
+
+
+  
+  /* Facultatif : légère réduction du gap sur mobile */
+  @media (max-width: 600px) {
+	#expertise .expertise-list {
+	  gap: 1em;
+	  padding: 0 0.5em;
+	}
+  }
+
+  
+
   
