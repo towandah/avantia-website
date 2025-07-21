@@ -3730,7 +3730,7 @@ input, select, textarea {
   /* ——— Amélioration visuelle des cartes d’expertise ——— */
 #expertise {
 	background: #f9f9f9;           /* fond gris clair pour détacher la section */
-	padding: 8em 0 5em;
+	padding: 5em 0;
   }
   
   #expertise .expertise-list {
@@ -3783,14 +3783,22 @@ input, select, textarea {
 	}
   }
 
-  
-  
 
   /* ——— Gutter extérieur de même taille que le gap intérieur ——— */
 #expertise .expertise-list {
 	padding: 0 1.5em;      /* espace à gauche et à droite de la grille */
 	box-sizing: border-box;/* pour que ce padding soit inclus dans la largeur totale */
   }
+  
+
+
+
+
+/* Pour les h3 de la section expertise « standard » */
+#expertise_alt .expertise-intro h3 {
+	margin-top: 4rem; /* ajustez la valeur selon vos goûts */
+  }
+  
 
 
 
