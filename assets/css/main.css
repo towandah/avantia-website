@@ -3790,7 +3790,7 @@ input, select, textarea {
   /* Pour les h3 de la section expertise « standard » */
 #expertise_alt .expertise-intro h3 {
 	margin-top: 2rem;
-  
+}
 
   /* ——— Gutter extérieur de même taille que le gap intérieur ——— */
 #expertise .expertise-list {
