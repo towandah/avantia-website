@@ -3885,13 +3885,14 @@ input, select, textarea {
 	flex-direction: column;
 	align-items: start;
   }
-  .office h2 {
+  .office h3 {
 	margin-top: 0;
 	color: #D2552E;
+	font-size: 1.5em;
   }
   .office-desc {
 	font-style: italic;
-	margin: 0.5em 0 1em;
+	margin: 0em 0 0em;
 	color: #555;
   }
   .office-photo img {
