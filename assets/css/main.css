@@ -3845,7 +3845,7 @@ input, select, textarea {
 /* ——— Effet hover pour les portraits de la section Associates ——— */
 #associates .associate img {
 	/* contour léger */
-	border: 2px solid #d2552e;
+	border: 5px solid #d2552e;
 	/* garde la rondeur */
 	border-radius: 50%;
 	/* transitions fluides */
