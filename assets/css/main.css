@@ -4149,3 +4149,43 @@ body.is-menu-visible #menu .close {
 		padding: 1.5em 1em;
 	}
 }
+
+
+
+/* ——— Gutter horizontal pour le footer ——— */
+#footer > .inner {
+	/* conserve max-width et centrage */
+	max-width: 75em;
+	margin: 0 auto;
+	justify-content: center;
+  
+	/* nouvel espace de chaque côté */
+	padding: 0 1.5em;
+	box-sizing: border-box; /* pour inclure le padding dans la largeur totale */
+  }
+  
+  /* Optionnel : réduire un peu sur très petits écrans */
+  @media screen and (max-width: 480px) {
+	#footer > .inner {
+	  padding: 0 1em;
+	}
+  }
+
+  /* Centre le copyright dans le footer */
+#footer > .inner .copyright {
+	text-align: center;    /* centre les éléments inline à l’intérieur */
+	width: 100%;           /* s’assure d’occuper toute la largeur */
+	padding: 0;            /* supprime tout padding résiduel */
+  }
+  
+  #footer > .inner .copyright li {
+	display: inline-block; /* remet les li en inline pour text-align */
+	margin: 0 1em;         /* espace horizontal entre les items */
+	border-left: none;     /* on supprime la bordure à gauche si besoin */
+  }
+  
+  #footer > .inner .copyright li + li {
+	border-left: solid 1px rgba(88, 88, 88, 0.15); /* recrée la bordure entre items */
+	padding-left: 1em;     /* espace après la bordure */
+  }
+  
