@@ -3367,6 +3367,10 @@ input, select, textarea {
 	margin-bottom: 0.5em;
 	font-size: 1.75em;
   }
+
+  #associates .associates-intro h3 {
+	color:#d2552e
+  }
   
   #associates .associates-list {
 	display: flex;
@@ -3841,7 +3845,7 @@ input, select, textarea {
 /* ——— Effet hover pour les portraits de la section Associates ——— */
 #associates .associate img {
 	/* contour léger */
-	border: 2px solid #e0e0e0;
+	border: 2px solid #d2552e;
 	/* garde la rondeur */
 	border-radius: 50%;
 	/* transitions fluides */
@@ -3852,5 +3856,72 @@ input, select, textarea {
   #associates .associate:hover img {
 	transform: translateY(-5px);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  
+
+
+
+
+
+
+
+
+  /* Grille bureaux : 2 colonnes desktop → 1 colonne mobile */
+.offices-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2em;
+	margin-top: 2em;
+  }
+  
+  .office {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 1.5em;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+  }
+  .office h2 {
+	margin-top: 0;
+	color: #D2552E;
+  }
+  .office-desc {
+	font-style: italic;
+	margin: 0.5em 0 1em;
+	color: #555;
+  }
+  .office-photo img {
+	width: 100%;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	object-fit: cover;
+  }
+  .office-contact {
+	font-style: normal;
+	margin-bottom: 1em;
+	color: #333;
+	line-height: 1.4;
+  }
+  .office-map iframe {
+	border-radius: 4px;
+  }
+  
+  /* ——— Crop uniforme en 16:9 pour les photos de bureaux ——— */
+.office-photo {
+	width: 100%;
+	aspect-ratio: 16 / 9;    /* ratio paysage */
+	overflow: hidden;         /* masque le surplus */
+	border-radius: 4px;       /* conserve l’arrondi */
+  }
+  
+  .office-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;        /* remplit le cadre sans déformation */
+	display: block;           /* supprime l’espace sous l’image */
   }
   
