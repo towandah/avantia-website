@@ -4138,7 +4138,7 @@ body.is-menu-visible #menu .close {
 /* ——— Gutter horizontal pour la section Associés ——— */
 #associates {
 	/* on passe de « padding: 4em 0; » à 4em en haut/bas et 1.5em à gauche/droite */
-	padding: 4em 1.5em;
+	padding: 2em 1.5em;
 	box-sizing: border-box;
 	/* pour inclure le padding dans la largeur */
 }
