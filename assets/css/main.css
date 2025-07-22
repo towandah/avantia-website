@@ -4186,6 +4186,6 @@ body.is-menu-visible #menu .close {
   
   #footer > .inner .copyright li + li {
 	border-left: solid 1px rgba(88, 88, 88, 0.15); /* recrée la bordure entre items */
-	padding-left: 1em;     /* espace après la bordure */
+	padding-left: 0em;     /* espace après la bordure */
   }
   
