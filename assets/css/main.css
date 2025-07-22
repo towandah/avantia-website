@@ -3835,3 +3835,22 @@ input, select, textarea {
 	margin-top: 7rem;
 }
 
+
+
+
+/* ——— Effet hover pour les portraits de la section Associates ——— */
+#associates .associate img {
+	/* contour léger */
+	border: 2px solid #e0e0e0;
+	/* garde la rondeur */
+	border-radius: 50%;
+	/* transitions fluides */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Au survol de la fiche, on soulève la photo */
+  #associates .associate:hover img {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
