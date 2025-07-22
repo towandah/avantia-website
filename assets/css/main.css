@@ -3912,6 +3912,7 @@ input, select, textarea {
   
   /* ——— Crop uniforme en 16:9 pour les photos de bureaux ——— */
 .office-photo {
+	margin: 2em 0;
 	width: 100%;
 	aspect-ratio: 16 / 9;    /* ratio paysage */
 	overflow: hidden;         /* masque le surplus */
