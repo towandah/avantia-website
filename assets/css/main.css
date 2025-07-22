@@ -4146,6 +4146,6 @@ body.is-menu-visible #menu .close {
 /* Sur très petits écrans, on réduit un peu le padding */
 @media screen and (max-width: 480px) {
 	#associates {
-		padding: 3em 1em;
+		padding: 1.5em 1em;
 	}
 }
