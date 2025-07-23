@@ -3277,13 +3277,13 @@ body.is-menu-visible #menu .close {
 /* Main */
 
 #main {
-	padding: 0em 0 6em 0;
+	padding: 2em 0 6em 0;
 }
 
 @media screen and (max-width: 736px) {
 
 	#main {
-		padding: 0em 0 4em 0;
+		padding: 2em 0 4em 0;
 	}
 
 }
@@ -3291,151 +3291,155 @@ body.is-menu-visible #menu .close {
 /* Footer */
 
 #footer {
-	padding: 2em 0 6em 0;
-	background-color: #ffffff;
+	padding: 5em 0 6em 0 ;
+	background-color: #f6f6f6;
 }
 
-#footer>.inner {
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-moz-flex-wrap: wrap;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-moz-flex-direction: row;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-}
-
-#footer>.inner>*> :last-child {
-	margin-bottom: 0;
-}
-
-#footer>.inner section:nth-child(1) {
-	width: calc(66% - 2.5em);
-	margin-right: 2.5em;
-}
-
-#footer>.inner section:nth-child(2) {
-	width: calc(33% - 2.5em);
-	margin-left: 2.5em;
-}
-
-#footer>.inner .copyright {
-	width: 100%;
-	padding: 0;
-	margin-top: 5em;
-	list-style: none;
-	font-size: 0.8em;
-	color: rgba(88, 88, 88, 0.5);
-}
-
-#footer>.inner .copyright a {
-	color: inherit;
-}
-
-#footer>.inner .copyright li {
-	display: inline-block;
-	border-left: solid 1px rgba(88, 88, 88, 0.15);
-	line-height: 1;
-	padding: 0 0 0 1em;
-	margin: 0 0 0 1em;
-}
-
-#footer>.inner .copyright li:first-child {
-	border-left: 0;
-	padding-left: 0;
-	margin-left: 0;
-}
-
-@media screen and (max-width: 1280px) {
-
-	#footer {
-		padding: 5em 0 3em 0;
+	#footer > .inner {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 	}
 
-	#footer>.inner section:nth-child(1) {
-		width: calc(66% - 1.25em);
-		margin-right: 1.25em;
+		#footer > .inner > * > :last-child {
+			margin-bottom: 0;
+		}
+
+		#footer > .inner section:nth-child(1) {
+			width: calc(66% - 2.5em);
+			margin-right: 2.5em;
+		}
+
+		#footer > .inner section:nth-child(2) {
+			width: calc(33% - 2.5em);
+			margin-left: 2.5em;
+		}
+
+		#footer > .inner .copyright {
+			width: 100%;
+			padding: 0;
+			margin-top: 5em;
+			list-style: none;
+			font-size: 0.8em;
+			color: rgba(88, 88, 88, 0.5);
+		}
+
+			#footer > .inner .copyright a {
+				color: inherit;
+			}
+
+			#footer > .inner .copyright li {
+				display: inline-block;
+				border-left: solid 1px rgba(88, 88, 88, 0.15);
+				line-height: 1;
+				padding: 0 0 0 1em;
+				margin: 0 0 0 1em;
+			}
+
+				#footer > .inner .copyright li:first-child {
+					border-left: 0;
+					padding-left: 0;
+					margin-left: 0;
+				}
+
+	@media screen and (max-width: 1280px) {
+
+		#footer {
+			padding: 5em 0 3em 0 ;
+		}
+
+			#footer > .inner section:nth-child(1) {
+				width: calc(66% - 1.25em);
+				margin-right: 1.25em;
+			}
+
+			#footer > .inner section:nth-child(2) {
+				width: calc(33% - 1.25em);
+				margin-left: 1.25em;
+			}
+
 	}
 
-	#footer>.inner section:nth-child(2) {
-		width: calc(33% - 1.25em);
-		margin-left: 1.25em;
+	@media screen and (max-width: 980px) {
+
+		#footer > .inner section:nth-child(1) {
+			width: 66%;
+			margin-right: 0;
+		}
+
+		#footer > .inner section:nth-child(2) {
+			width: calc(33% - 2.5em);
+			margin-left: 2.5em;
+		}
+
 	}
 
-}
+	@media screen and (max-width: 736px) {
 
-@media screen and (max-width: 980px) {
+		#footer {
+			padding: 3em 0 1em 0 ;
+		}
 
-	#footer>.inner section:nth-child(1) {
-		width: 66%;
-		margin-right: 0;
+			#footer > .inner {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				#footer > .inner section:nth-child(1) {
+					width: 100%;
+					margin-right: 0;
+					margin: 3em 0 0 0;
+				}
+
+				#footer > .inner section:nth-child(2) {
+					-moz-order: -1;
+					-webkit-order: -1;
+					-ms-order: -1;
+					order: -1;
+					width: 100%;
+					margin-left: 0;
+				}
+
+				#footer > .inner .copyright {
+					margin-top: 3em;
+				}
+
 	}
 
-	#footer>.inner section:nth-child(2) {
-		width: calc(33% - 2.5em);
-		margin-left: 2.5em;
+	@media screen and (max-width: 480px) {
+
+		#footer > .inner .copyright {
+			margin-top: 3em;
+		}
+
+			#footer > .inner .copyright li {
+				border-left: 0;
+				padding-left: 0;
+				margin: 0.75em 0 0 0;
+				display: block;
+				line-height: inherit;
+			}
+
+				#footer > .inner .copyright li:first-child {
+					margin-top: 0;
+				}
+
 	}
 
-}
 
-@media screen and (max-width: 736px) {
 
-	#footer {
-		padding: 3em 0 1em 0;
-	}
 
-	#footer>.inner {
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-	}
-
-	#footer>.inner section:nth-child(1) {
-		width: 100%;
-		margin-right: 0;
-		margin: 3em 0 0 0;
-	}
-
-	#footer>.inner section:nth-child(2) {
-		-moz-order: -1;
-		-webkit-order: -1;
-		-ms-order: -1;
-		order: -1;
-		width: 100%;
-		margin-left: 0;
-	}
-
-	#footer>.inner .copyright {
-		margin-top: 3em;
-	}
-
-}
-
-@media screen and (max-width: 480px) {
-
-	#footer>.inner .copyright {
-		margin-top: 3em;
-	}
-
-	#footer>.inner .copyright li {
-		border-left: 0;
-		padding-left: 0;
-		margin: 0.75em 0 0 0;
-		display: block;
-		line-height: inherit;
-	}
-
-	#footer>.inner .copyright li:first-child {
-		margin-top: 0;
-	}
-
-}
 
 /* Wrapper */
 
@@ -3737,26 +3741,6 @@ body.is-menu-visible #menu .close {
 
 
 
-/* ——— Footer : wrapper centré et colonnes groupées ——— */
-#footer>.inner {
-	max-width: 75em;
-	margin: 0 auto;
-	justify-content: center;
-}
-
-/* Espacement symétrique entre les deux colonnes */
-#footer>.inner section:nth-child(1),
-#footer>.inner section:nth-child(2) {
-	margin: 0 1.25em;
-}
-
-/* (Optionnel) centrer le contenu interne de chaque colonne */
-#footer>.inner section {
-	text-align: center;
-}
-
-
-
 
 /* Agrandir le titre "Nos avocats" */
 #associates .associates-intro h3 {
@@ -3790,7 +3774,7 @@ body.is-menu-visible #menu .close {
 #expertise .expertise-header {
 	text-align: center;
 	margin-bottom: 2em;
-	margin-top: 2rem;
+	margin-top: 0rem;
 }
 
 #expertise .expertise-header h1 {
@@ -3999,7 +3983,7 @@ body.is-menu-visible #menu .close {
 
 
 #expertise {
-	padding: 5em 0 5em 0;
+	padding: 2em 0 5em 0;
 }
 
 @media screen and (max-width: 736px) {
@@ -4052,7 +4036,7 @@ body.is-menu-visible #menu .close {
 }
 
 .office {
-	background: #fff;
+	background: #f9f9f9;
 	border: 1px solid #e0e0e0;
 	border-radius: 8px;
 	padding: 1.5em;
@@ -4062,7 +4046,19 @@ body.is-menu-visible #menu .close {
 	align-items: start;
 }
 
+/* Centre le titre “Nos bureaux” */
+#main .inner > h1 {
+	text-align: center;
+	margin-bottom: 1.5em; /* optionnel, pour espacer un peu sous le titre */
+  }
+
 .office h3 {
+	margin-top: 0;
+	color: #D2552E;
+	font-size: 1.5em;
+}
+
+.office h1 {
 	margin-top: 0;
 	color: #D2552E;
 	font-size: 1.5em;
