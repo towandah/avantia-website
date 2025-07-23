@@ -4186,3 +4186,62 @@ body.is-menu-visible #menu .close {
 	  padding: 0 1em;
 	}
   }
+
+
+
+
+
+/* Compactage des Mentions Légales */
+.legal-info h3,
+.host-info h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  color: #D2552E;
+}
+
+.legal-info p,
+.host-info p {
+  margin: 0.4em 0;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* Dictionnaire compact */
+.legal-info dl {
+  margin: 0;
+  padding: 0;
+}
+
+.legal-info dt {
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+.legal-info dd {
+  margin: 0 0 0.8em 1em;
+  line-height: 1.4;
+}
+
+/* Hébergeur, même traitement */
+.host-info p {
+  margin: 0.4em 0;
+}
+
+
+/* Section Propriété intellectuelle */
+.ip-info h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	font-size: 1.2em;
+	color: #D2552E;
+  }
+  
+  .ip-info p {
+	margin: 0.4em 0;
+	line-height: 1.4;
+	color: #333;
+  }
+  
+
